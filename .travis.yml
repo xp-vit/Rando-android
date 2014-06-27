@@ -83,9 +83,9 @@ before_install:
   - echo yes | android update sdk --filter android-17 --all --no-ui --force > /dev/null
   - echo yes | android update sdk --filter $ANDROID_SDKS --all --no-ui --force > /dev/null
   - echo yes | android update sdk --filter extra-android-support --all --no-ui --force > /dev/null
-  - echo yes | android update sdk --filter extra-android-m2repository --all --no-ui --force > /dev/null
-  - echo yes | android update sdk --filter extra-google-m2repository --all --no-ui --force > /dev/null
-  - echo yes | android update sdk --filter extra-google-google_play_services --all --no-ui --force > /dev/null
+  #- echo yes | android update sdk --filter extra-android-m2repository --all --no-ui --force > /dev/null
+  #- echo yes | android update sdk --filter extra-google-m2repository --all --no-ui --force > /dev/null
+  #- echo yes | android update sdk --filter extra-google-google_play_services --all --no-ui --force > /dev/null
 
   # Create and start emulator
   - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
